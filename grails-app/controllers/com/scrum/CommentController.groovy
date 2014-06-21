@@ -21,8 +21,7 @@ class CommentController extends RestfulController<Comment>{
 
     @Transactional
     def save() {
-        println("save is called: COMMENT");
-        println("params: $params");
+        log.info("save is called: COMMENT");
         def commentInstance = createResource(params);
 
         if (commentInstance == null) {
@@ -36,7 +35,6 @@ class CommentController extends RestfulController<Comment>{
 
         commentInstance.validate()
         if (commentInstance.hasErrors()) {
-            println("commentInstance.errors: ${commentInstance.errors}");
             respond commentInstance.errors
             return
         }

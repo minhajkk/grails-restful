@@ -25,8 +25,7 @@ class TaskController extends RestfulController<Task>{
 
     @Transactional
     def save() {
-        println("save is called: TASK");
-        println("params: $params");
+        log.info("save is called: TASK");
         def taskInstance = createResource(params);
 
         if (taskInstance == null) {
@@ -41,7 +40,6 @@ class TaskController extends RestfulController<Task>{
 
         taskInstance.validate()
         if (taskInstance.hasErrors()) {
-            println("taskInstance.errors: ${taskInstance.errors}");
             respond taskInstance.errors
             return
         }
@@ -70,7 +68,6 @@ class TaskController extends RestfulController<Task>{
     }
 
     def show(Task task) {
-        println("Printing Tasl : $task");
         if(task){
             respond (task, model: [taskInstance: task], view: 'show')
             return
