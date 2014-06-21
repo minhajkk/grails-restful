@@ -162,13 +162,13 @@ grails.mongo.default.mapping = {
     '*'(reference:true)
 }
 
-grails.plugins.springsecurity.secureChannel.useHeaderCheckChannelSecurity = true
-grails.plugins.springsecurity.portMapper.httpPort = 80
-grails.plugins.springsecurity.portMapper.httpsPort = 443
-grails.plugins.springsecurity.secureChannel.secureHeaderName = "X-FORWARDED-PROTO"
-grails.plugins.springsecurity.secureChannel.secureHeaderValue = "http"
+grails.plugin.springsecurity.secureChannel.useHeaderCheckChannelSecurity = true
+grails.plugin.springsecurity.portMapper.httpPort = 80
+grails.plugin.springsecurity.portMapper.httpsPort = 443
+grails.plugin.springsecurity.secureChannel.secureHeaderName = "X-FORWARDED-PROTO"
+grails.plugin.springsecurity.secureChannel.secureHeaderValue = "http"
 
-grails.plugins.springsecurity.secureChannel.insecureHeaderName = "X-FORWARDED-PROTO"
-grails.plugins.springsecurity.secureChannel.insecureHeaderValue = "https"
+grails.plugin.springsecurity.secureChannel.insecureHeaderName = "X-FORWARDED-PROTO"
+grails.plugin.springsecurity.secureChannel.insecureHeaderValue = "https"
 grails.plugin.springsecurity.auth.loginFormUrl = '/auth/login'
 grails.plugin.springsecurity.failureHandler.defaultFailureUrl  = '/auth/authfail'
