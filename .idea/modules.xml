@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/entities-inplacePlugin.iml" filepath="$PROJECT_DIR$/entities-inplacePlugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/entities-inplacePlugin-grailsPlugins.iml" filepath="$PROJECT_DIR$/entities-inplacePlugin-grailsPlugins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grails-restful.iml" filepath="$PROJECT_DIR$/grails-restful.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grails-restful-grailsPlugins.iml" filepath="$PROJECT_DIR$/grails-restful-grailsPlugins.iml" />
+    </modules>
+  </component>
+</project>
+
