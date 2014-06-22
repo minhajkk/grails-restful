@@ -126,6 +126,8 @@ grails.plugin.springsecurity.securityConfigType = 'InterceptUrlMap'
 grails.plugin.springsecurity.interceptUrlMap = [
         '/':                              ['permitAll'],
         '/assets/**':                     ['permitAll'],
+        '/js/**':                         ['permitAll'],
+        '/css/**':                        ['permitAll'],
         '/**/js/**':                      ['permitAll'],
         '/**/css/**':                     ['permitAll'],
         '/**/images/**':                  ['permitAll'],

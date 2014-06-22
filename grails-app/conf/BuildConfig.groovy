@@ -80,6 +80,9 @@ grails.project.dependency.resolution = {
         }
         compile ":cloud-support:1.0.8"
 
+        compile ":rest-api-doc:0.1.3"
+        test ":code-coverage:1.2.7"
+
     }
 }
 
