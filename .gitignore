@@ -18,4 +18,4 @@ out
 target/
 lib/
 .idea/**
-.idea/misc.xml
+restapidoc.json
