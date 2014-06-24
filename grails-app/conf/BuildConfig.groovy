@@ -54,6 +54,10 @@ grails.project.dependency.resolution = {
         compile "org.springframework:spring-orm:$springVersion"
         test "org.spockframework:spock-grails-support:0.7-groovy-2.0"
         compile "net.sf.ehcache:ehcache-core:2.4.8"
+
+        build 'org.apache.httpcomponents:httpcore:4.3.2'
+        build 'org.apache.httpcomponents:httpclient:4.3.2'
+        build 'org.apache.httpcomponents:httpmime:4.3.3'
     }
 
     plugins {
