@@ -84,5 +84,13 @@ grails.project.dependency.resolution = {
 
         compile ":newrelic:1.0-2.18.0"
 
+        // Coveralls plugin
+        build(':coveralls:0.1.3', ':rest-client-builder:1.0.3') {
+            export = false
+        }
+        test(':code-coverage:1.2.7') {
+            export = false
+        }
+
     }
 }
