@@ -18,3 +18,4 @@ out
 target/
 lib/
 .idea/**
+restapidoc.json
