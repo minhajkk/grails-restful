@@ -13,14 +13,21 @@
     <link rel="shortcut icon" href="${assetPath(src: 'favicon.ico')}" type="image/x-icon">
     <link rel="apple-touch-icon" href="${assetPath(src: 'apple-touch-icon.png')}">
     <link rel="apple-touch-icon" sizes="114x114" href="${assetPath(src: 'apple-touch-icon-retina.png')}">
+    <newrelic:browserTimingHeader/>
     <asset:stylesheet src="application.css"/>
     <asset:javascript src="application.js"/>
-
-    %{--<g:javascript library="jquery" />--}%
-
     %{--Added for drop down selects--}%
     <asset:javascript src="bootstrap-select.min.js"/>
     <asset:stylesheet src="bootstrap-select.min.css"/>
+    <g:javascript>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-52230443-1', 'grails-restful.herokuapp.com');
+        ga('send', 'pageview');
+    </g:javascript>
     <g:layoutHead/>
 </head>
 <body>
@@ -78,6 +85,6 @@
 <div class="container">
     <g:layoutBody/>
 </div>
-
+<newrelic:browserTimingFooter/>
 </body>
 </html>

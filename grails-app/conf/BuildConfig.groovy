@@ -81,24 +81,8 @@ grails.project.dependency.resolution = {
         compile ":cloud-support:1.0.8"
 
         compile ":rest-api-doc:0.1.3"
-        test ":code-coverage:1.2.7"
+
+        compile ":newrelic:1.0-2.18.0"
 
     }
-}
-
-
-codenarc {
-    processTestUnit = false
-    processTestIntegration = false
-    processServices = false
-    processControllers = false
-    processDomain = false
-    reports = {
-        MyHtmlReport('html') {                  // Report type is 'html'
-            outputFile = 'target/CodeNarc-Report.html'
-            title = 'Scrum Server Report'
-        }
-    }
-
-    ruleSetFiles = ["rulesets/formatting.xml"]
 }
