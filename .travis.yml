@@ -1,13 +1,21 @@
 language: groovy
-jdk:
-- oraclejdk7
-branches:
-  only:
-  - master
-  - test
-script: ./grailsw refresh-dependencies && ./grailsw test-app -coverage -xml
+jdk: oraclejdk7
+
+script:
+  - ./grailsw refresh-dependencies --non-interactive
+  - ./grailsw "test-app -coverage -xml"
+
+notifications:
+  email:
+    recipients:
+      - minhaj.kk@gmail.com
+
+    on_success: change
+    on_failure: change
+
 after_success:
-- ./grailsw coveralls
+  - ./grailsw coveralls
+
 deploy:
   provider: heroku
   api_key:
