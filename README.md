@@ -6,3 +6,5 @@ Project management application created using Grails 2.4.0 restful controllers an
 Unit test written for restful controllers can be found in class [ProjectControllerSpec](https://github.com/minhajkk/grails-restful/blob/master/test/unit/com/scrum/ProjectControllerSpec.groovy)
 
 [![Build Status](https://travis-ci.org/minhajkk/grails-restful.svg?branch=master)](https://travis-ci.org/minhajkk/grails-restful)
+
+[![Coverage Status](https://coveralls.io/repos/minhajkk/grails-restful/badge.png)](https://coveralls.io/r/minhajkk/grails-restful)
