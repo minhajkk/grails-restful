@@ -3,11 +3,6 @@ package com.scrum
 import grails.rest.RestfulController
 import grails.transaction.Transactional
 import org.codehaus.groovy.grails.web.servlet.HttpHeaders
-import org.restapidoc.annotation.RestApi
-import org.restapidoc.annotation.RestApiMethod
-import org.restapidoc.annotation.RestApiParam
-import org.restapidoc.annotation.RestApiParams
-import org.restapidoc.pojo.RestApiParamType
 
 import static com.scrum.ScrumUtil.EXCLUDE_FIELD_LIST
 import static org.springframework.http.HttpStatus.*
@@ -15,7 +10,6 @@ import static org.springframework.http.HttpStatus.*
 /**
  * Controller expose the API to support CRUD operation on @code Project
  */
-@RestApi(name = "project services", description = "Methods for managing projects")
 class ProjectController extends RestfulController<Project>{
 
     static responseFormats = ['html', 'json', 'xml']
@@ -99,10 +93,6 @@ class ProjectController extends RestfulController<Project>{
      * @param project
      * @return
      */
-    @RestApiMethod(description="Get a Project")
-    @RestApiParams(params=[
-    @RestApiParam(name="id", type="long", paramType = RestApiParamType.PATH, description = "The project id")
-    ])
     def show(Project project) {
 
         if(!project){
