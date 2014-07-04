@@ -174,3 +174,4 @@ grails.plugin.springsecurity.secureChannel.insecureHeaderName = "X-FORWARDED-PRO
 grails.plugin.springsecurity.secureChannel.insecureHeaderValue = "https"
 grails.plugin.springsecurity.auth.loginFormUrl = '/auth/login'
 grails.plugin.springsecurity.failureHandler.defaultFailureUrl  = '/auth/authfail'
+newrelic.enabled=true
