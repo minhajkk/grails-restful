@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/minhajkk/grails-restful.png?label=ready&title=Ready)](https://waffle.io/minhajkk/grails-restful)
 Grails restful controllers demo application
 =============================================
 
