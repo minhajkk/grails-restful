@@ -67,7 +67,7 @@ grails.project.dependency.resolution = {
         // plugins for the compile step
         compile ":scaffolding:2.1.0"
         compile ':cache:1.1.6'
-        compile ":asset-pipeline:1.8.7"
+        compile ":asset-pipeline:1.9.7"
         runtime ":jquery:1.11.1"
         compile ":spring-security-core:2.0-RC3"
         compile ":spring-security-rest:1.4.0.M2"
@@ -90,7 +90,7 @@ grails.project.dependency.resolution = {
         build(':coveralls:0.1.3', ':rest-client-builder:1.0.3') {
             export = false
         }
-        test(':code-coverage:1.2.7') {
+        test(':code-coverage:2.0.3-2') {
             export = false
         }
 
