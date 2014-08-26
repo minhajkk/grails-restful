@@ -3,7 +3,7 @@ jdk: oraclejdk7
 
 script:
   - ./grailsw refresh-dependencies --non-interactive
-  - ./grailsw "test-app -coverage -xml"
+  - ./grailsw prod "test-app -coverage -xml"
 
 notifications:
   email:
@@ -14,7 +14,7 @@ notifications:
     on_failure: change
 
 after_success:
-  - ./grailsw coveralls
+  - ./grailsw prod coveralls
 
 deploy:
   provider: heroku

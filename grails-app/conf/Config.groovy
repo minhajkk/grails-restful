@@ -88,7 +88,7 @@ environments {
     }
     production {
         grails.logging.jul.usebridge = false
-        grails.serverURL = "http://grails-restful.herokuapp.com/"
+        grails.serverURL = "http://grails-restful.herokuapp.com"
     }
 }
 
