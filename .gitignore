@@ -19,3 +19,4 @@ target/
 lib/
 .idea/**
 restapidoc.json
+*.ser
